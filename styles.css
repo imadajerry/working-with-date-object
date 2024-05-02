@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+.date-time-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  font-size: 1.5rem;
+
+  background-color: antiquewhite;
+}
+
+#time {
+  text-align: right;
+}
+
+@media (max-width: 550px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .date-time-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #date {
+    border-bottom: 2px solid grey;
+  }
+
+  #time {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
